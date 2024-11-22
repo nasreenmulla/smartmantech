@@ -1,0 +1,79 @@
+.custom {
+    background-color: red !important; /* Ensure this style overrides any default styles */
+  }
+  /* CSS for the disabled time slot */
+.disabled-time-slot {
+  background-color: #f0f0f0; /* Light grey background */
+  color: #999; /* Grey text color */
+}
+
+/* Optional: Add hover styling for disabled slots */
+.disabled-time-slot:hover {
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+}
+/* colors */
+
+/* Editor.css */
+
+
+/* colrs */
+.e-schedule .e-appointment-details {
+  padding: 0 !important;
+/* Set background to transparent */
+}
+
+/* colors by statys */
+/* Editor.css */
+.custom-event-class {
+  border-radius: 4px;
+  padding: 5px;
+  color: black; /* Ensure text color contrasts well with background */
+  font-size: 14px; /* Optional: Set font size for better readability */
+  font-weight: normal; /* Optional: Set font weight if needed */
+}
+.e-schedule .e-event {
+  background-color: transparent !important; /* Remove default background color */
+  border: 1px solid #000 !important; /* Example to set a custom border */
+}
+/* Example CSS to cover the entire event block */
+.new-status {
+  background-color: grey !important;
+  width: 100%;
+  height: 100%;/* Ensure the background color is applied */
+  color: white; /* Ensure text is readable */
+  border-radius: 5px; /* Optional: rounded corners */
+  padding: 10px; /* Optional: padding inside the event */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Ensure you define similar styles for other statuses */
+
+
+.revisit-status {
+  background-color: lightblue !important;
+}
+
+.booked-status {
+  background-color: purple !important;
+  color: white;
+}
+
+.confirmed-status {
+  background-color: darkblue !important;
+  color: white;
+}
+.waiting-status {
+  background-color: yellow !important;
+  color: black; /* Ensure text is visible */
+}
+
+.visit-closed-status {
+  background-color: green !important;
+  color: white;
+}
+
+.no-show-status {
+  background-color: orange !important;
+  color: black; /* Ensure text is visible */
+}
+/* smallone */

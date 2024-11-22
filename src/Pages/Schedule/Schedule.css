@@ -1,0 +1,91 @@
+/* .Sform-section {
+    border: 2px solid black; 
+    border-radius: 8px; 
+    background-color: white;
+    padding: 3px;
+  
+  }
+  .patient-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    max-width: 80%;
+  }
+  
+  .table-container {
+    max-height: 300px; 
+    overflow-y: auto;
+  }
+  
+  .patient-details table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .patient-details table th,
+  .patient-details table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .patient-details table th {
+    background-color: #f2f2f2;
+  }
+  
+  .patient-details table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  } */
+  
+
+
+  
+  .appointment-section {
+    position: relative; /* Ensure the section has a relative position */
+  }
+  /* visitfilter
+   */
+   /* Styles for the container */
+   .Sform-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+   
+    padding: 20px;
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+  
+  
+  
+/* Styles for individual items */
+.form-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Makes items take up equal space */
+  min-width: 200px; /* Adjust based on your needs */
+}
+
+/* Optional: Add styles for labels and selects */
+.form-item label {
+  margin-bottom: 5px; /* Adjust spacing between label and input */
+}
+
+.form-item select,
+.form-item .date-picker {
+  width: 100%; /* Ensure select elements take full width of their container */
+}
+.table-container {
+  max-height: 500px; /* Adjust as needed */
+  overflow-y: auto; /* Adds a scrollbar if content exceeds max-height */
+}
+
+
+

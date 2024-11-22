@@ -1,0 +1,67 @@
+/* src/components/Popup/Popup.css */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: auto; /* Allows the popup width to adjust based on content */
+    max-width: 90%; /* Optional: Prevents the popup from becoming too wide on large screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-content h2 {
+    margin-top: 0;
+  }
+  
+  .str-code-table {
+    border-collapse: collapse;
+    margin: 10px 0;
+    width: auto; /* Allows the table to only take up as much width as needed */
+  }
+  
+  .str-code-table th, .str-code-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .str-code-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .str-code-row {
+    cursor: pointer;
+  }
+  
+  .str-code-row:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .close-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .close-button:hover {
+    background: #0056b3;
+  }
+  
+  
+
+  

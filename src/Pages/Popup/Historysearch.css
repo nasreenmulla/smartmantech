@@ -1,0 +1,124 @@
+/* Styles for the popup overlay */
+.billing-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Styles for the popup content */
+  .billing-popup-content {
+    background: white;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    min-height: 200px; /* Adjusted for minimal height */
+    max-height: 70vh;  /* Adjusted for minimal height */
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    position: relative;
+  }
+  
+  /* Header styles */
+  .billing-popup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  /* Search input style */
+  .billing-popup-search {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Cancel search button style */
+  .billing-popup-cancel-button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  /* Cancel search button hover effect */
+  .billing-popup-cancel-button:hover {
+    background: #e60000;
+  }
+  
+  /* Close button style */
+  .billing-popup-close-button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    padding: 0;
+  }
+  
+  /* Close button hover effect */
+  .billing-popup-close-button:hover {
+    color: #ff4d4d;
+  }
+  
+  /* Table styles */
+  .billing-popup-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  /* Table header styles */
+  .billing-popup-table th,
+  .billing-popup-table td {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  /* Table header background */
+  .billing-popup-table th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Footer styles */
+  .billing-popup-footer {
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  /* Add Selected and Close button styles */
+  .billing-popup-footer .billing-popup-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .billing-popup-footer .billing-popup-button:hover {
+    background: #0056b3;
+  }
+  
+  
+  
+  

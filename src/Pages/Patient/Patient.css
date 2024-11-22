@@ -1,0 +1,277 @@
+.patient-info-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: grey; */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: -1px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-row input[type="checkbox"] {
+  margin-top: 8px;
+}
+
+.button-row {
+  text-align: right;
+}
+
+.button-row button {
+  margin-left: 10px;
+  padding: 8px 20px;
+  /* background-color: #007bff; */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-patient-button {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.new-patient-button button {
+  padding: 10px 20px;
+  /* background-color: #28a745; */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-input {
+  margin-top: 20px;
+}
+
+.search-input input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.mandatory-star {
+  color: red;
+  margin-left: 5px; /* Adjust as per your design */
+}
+.search-input {
+  position: relative;
+  display: inline-block;
+  width: 150px; /* Adjust width as needed */
+}
+
+.search-input input[type="text"] {
+  padding-right: 10px; /* Space for icon */
+}
+
+.search-icon {
+  position: absolute;
+  margin-left: 140px; /* Adjust position as needed */
+  bottom: 37%;
+  transform: translateY(-50%);
+  color: #666; /* Adjust color */
+  cursor: pointer;
+}
+
+.section-header {
+  /* background-color: #7713c9; Light gray background */
+  padding: 1rem; /* Padding around the heading */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.section-header h2 {
+  margin: 0; /* Remove default margin */
+  font-size: 2rem; /* Adjust size as needed */
+  font-weight: bold; /* Bold font */
+  color: #333; /* Dark color */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.section-header h2::after {
+  content: ''; /* Empty content */
+  display: block; /* Block element */
+  width: 50%; /* Adjust width as needed */
+  margin-top: 8px; /* Spacing from text */
+  /* Red underline */
+}
+
+
+
+/* You can add more CSS styles as per your design preferences */
+.form-section {
+  border: 2px solid black; /* Blue border */
+  border-radius: 8px; /* Rounded corners */
+  /* background-color: forestgreen; */
+
+}
+
+.form-section h3 {
+  font-size: 1.8rem; /* Larger font size */
+  font-weight: bold; /* Bold font */
+
+
+ 
+}
+
+
+/* report */
+
+/* Styles for Report Generator Page */
+.report-generator-page {
+font-family: Arial, sans-serif;
+padding: 20px;
+}
+
+.report-generator-page h1 {
+margin-bottom: 20px;
+}
+
+.report-generator-page button {
+padding: 10px 20px;
+font-size: 16px;
+background-color: #007bff;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+.report-modal {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+padding: 20px;
+z-index: 1000;
+}
+
+.report-modal-content {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.report-modal .close {
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+font-size: 20px;
+color: #000;
+}
+
+.report-content {
+max-height: 400px; /* Set a maximum height */
+overflow-y: auto; /* Enable vertical scrollbar when content exceeds max height */
+margin-bottom: 20px;
+}
+
+.report-options button {
+padding: 10px 20px;
+font-size: 16px;
+background-color: #28a745;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+.report {
+background-color: #ffffff;
+padding: 20px;
+margin: 20px auto;
+border: 1px solid #ccc;
+max-width: 800px; /* Adjust max-width as per your layout */
+overflow: hidden; /* Hide overflow to prevent double scrollbar */
+}
+
+.report-section {
+margin-bottom: 20px;
+}
+
+.header {
+font-weight: bold;
+margin-bottom: 10px;
+color: #000;
+}
+
+.creation,
+.patient-profile,
+.patient-contacts,
+.patient-consent {
+margin-top: 15px;
+}
+
+.label {
+font-weight: bold;
+margin-right: 5px;
+color: #000;
+}
+
+.patient-profile,
+.patient-contacts,
+.patient-consent {
+padding: 10px;
+border: 1px solid #000;
+background-color: #fff;
+}
+
+.patient-profile h1,
+.patient-contacts h1,
+.patient-consent h1 {
+font-size: 18px;
+margin-bottom: 10px;
+border-bottom: 1px solid #000;
+padding-bottom: 5px;
+color: #000;
+}
+
+.field {
+margin-bottom: 8px;
+}
+
+.patient-consent {
+white-space: pre-wrap; /* Preserve formatting of consent text */
+padding: 10px;
+color: #000;
+}
+/* formodalbackgrounddisable */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it sits above other content */
+  pointer-events: auto; /* Allow interaction with the overlay itself */
+}
+body.modal-open {
+  overflow: hidden;
+}

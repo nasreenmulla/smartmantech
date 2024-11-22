@@ -1,0 +1,251 @@
+.report-generator-page {
+  font-family: Arial, sans-serif;
+  /* padding: 20px; */
+}
+
+/* .report-generator-page h1 {
+  margin-bottom: 20px;
+} */
+
+.report-generator-page button {
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.report-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #fff; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* padding: 20px; */
+  z-index: 1000;
+}
+
+.report-modal-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.report-modal .close {
+  position: absolute;
+  /* top: 10px;
+  right: 10px; */
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
+}
+
+.report-content {
+  max-height: 400px; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrollbar when content exceeds max height */
+  /* margin-bottom: 20px; */
+}
+
+.report-options button {
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.report {
+  /* background-color: #ffffff; */
+  /* padding: 20px; */
+  /* margin: 20px auto; */
+  border: 1px solid #ccc;
+  max-width: 800px; /* Adjust max-width as per your layout */
+  overflow: hidden; /* Hide overflow to prevent double scrollbar */
+}
+
+.report-section {
+  /* margin-bottom: 20px; */
+}
+
+.header {
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  color: #000;
+}
+
+.creation-details
+.patient-profile,
+.patient-contacts,
+.patient-consent {
+  /* margin-top: 15px; */
+}
+
+.label {
+  font-weight: bold;
+  /* margin-right: 5px; */
+  color: #000;
+}
+ .creation-details,
+.patient-profile,
+.patient-contacts,
+.patient-consent {
+  /* padding: 10px; */
+  border: 1px solid #000;
+  background-color: #fff;
+}
+.creation-details h1
+.patient-profile h1,
+.patient-contacts h1,
+.patient-consent h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+  /* padding-bottom: 5px; */
+  color: #000;
+}
+
+.field {
+  /* margin-bottom: 8px; */
+}
+
+.patient-consent {
+ /* Preserve formatting of consent text */
+ 
+  color: #000;
+}
+.consent-arabic {
+  font-family: 'Arial', sans-serif; /* Use appropriate font-family for Arabic */
+  text-align: right; /* Right-align Arabic text */
+  direction: rtl; /* Set direction to right-to-left for Arabic */
+   /* Adjust spacing */
+}
+
+.consent-english {
+  font-family: 'Arial', sans-serif; /* Use appropriate font-family for English */
+  text-align: left; /* Left-align English text */
+  direction: ltr; /* Set direction to left-to-right for English */
+  /* margin-top: 3px; Adjust spacing */
+}
+.bar{
+display: flex;
+}
+.bar {
+display: flex;
+align-items: flex-start; /* Align items at the start of the flex container */
+gap: 20px; /* Gap between fields and barcode */
+}
+
+.creation-details {
+flex: 1; /* Take up remaining space */
+}
+
+.field {
+/* margin-bottom: 10px; Space between fields */
+}
+
+.barcode img {
+max-width: 100%; /* Ensure barcode image doesn't exceed its container */
+}
+.patient-profile {
+width: 100%;
+}
+
+.field-row {
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px; /* Adjust as needed */
+}
+
+.field {
+flex: 1; /* Each field takes equal width */
+/* margin-right: 20px;  */
+}
+
+.label {
+font-weight: bold;
+/* margin-right: 5px; */
+}
+.patient-contacts {
+width: 100%;
+}
+
+.field-row {
+display: flex;
+justify-content: space-between;
+/* margin-bottom: 10px; */
+}
+
+.field {
+flex: 1; /* Each field takes equal width */
+/* margin-right: 20px;  */
+}
+
+.label {
+font-weight: bold;
+/* margin-right: 5px; */
+}
+
+.company-details {
+width: 100%;
+}
+
+.field-row {
+display: flex;
+justify-content: space-between;
+/* margin-bottom: 10px;  */
+}
+
+.field {
+flex: 1; /* Each field takes equal width */
+/* margin-right: 20px;  */
+}
+
+.label {
+font-weight: bold;
+/* margin-right: 5px; */
+}
+.ph{
+text-align: center;
+}
+.phh{
+background-color: #f0f0f0; /* Light gray background */
+border: 1px solid #ccc; /* Light gray border */
+padding: 10px; /* Padding around the text */
+text-align: center; /* Center align text */
+}
+.company-details {
+display: flex;
+justify-content: space-between; /* Adjust the space between the two columns */
+/* margin-top: 20px;  */
+}
+
+.left-column,
+.right-column {
+flex: 1; /* Each column takes equal width */
+}
+
+.left-column {
+/* padding-right: 20px; */
+}
+
+.right-column {
+direction: rtl; /* Set direction to right-to-left for Arabic text */
+text-align: right; /* Align text to right for Arabic text */
+padding-left: 20px; 
+}
+
+.field {
+margin-bottom: 10px; /* Space between each field */
+/* Additional styling for each field */
+}
+
+.field.arabic {
+/* Additional styles specific to Arabic text */
+}
+@font-face {
+  font-family: 'BarcodeFont';
+  src: url('../../fonts/3OF9.TTF') format('truetype');
+}
+

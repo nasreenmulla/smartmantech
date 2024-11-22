@@ -1,0 +1,64 @@
+
+
+.inv {
+    /* Optional styling for the container */
+    padding: 20px;
+}
+
+.report-section {
+    margin-bottom: 20px; /* Space below the barcode */
+    text-align: center; /* Center-align the barcode */
+}
+
+.bar {
+    display: flex;
+    justify-content: center; /* Center the barcode horizontally */
+}
+
+.barcode img {
+    max-width: 100%; /* Ensure the barcode image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.Ireport-section {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    gap: 10px; /* Space between rows */
+}
+
+.field-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow fields to wrap */
+    gap: 10px; /* Space between fields */
+}
+
+.field {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis */
+    min-width: 150px; /* Minimum width for each field */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.field-row:nth-child(1) .field {
+    flex: 1 1 calc(50% - 10px); /* Two fields per row with gap */
+}
+
+.field-row:nth-child(2) .field {
+    flex: 1 1 calc(33.333% - 10px); /* Three fields per row with gap */
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it sits above other content */
+    pointer-events: auto; /* Allow interaction with the overlay itself */
+  }
+  body.modal-open {
+    overflow: hidden;
+  }
+  

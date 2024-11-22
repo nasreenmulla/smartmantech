@@ -1,0 +1,212 @@
+.main-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+ 
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.patient-list-container {
+  overflow-y: auto;
+  flex: 1;
+  max-width: 300px;
+  background-color: #ffffff; /* White background for the list */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+
+
+.search-bar {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #007bff; /* Blue border on focus */
+}
+
+.patient-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.patient-item {
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
+
+
+.details-container {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.patient-details-container,
+.observations-container {
+  flex: 1;
+ 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.patient-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px;
+}
+
+.observations-container {
+  /* display: grid; */
+  /* grid-template-columns: repeat(1, 1fr); 2 columns */
+  /* gap: 15px; */
+}
+
+
+.patient-details p,
+.observations-container p {
+  margin: 5px 0;
+}
+.form-container {
+  flex: 1;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+
+ background-color: '#d3d3d3';
+
+  border-radius: 5px;
+}
+.Read {
+  width: 100%;
+  height: 10%;
+ 
+  background-color: '#d3d3d3';
+
+}
+
+
+.form-group {
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333; /* Darker color for labels */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #333; /* Dark text color for inputs */
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.field-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.field-row .form-group {
+  flex: 1 1 22%;
+  min-width: 100px;
+}
+
+.blood-pressure-section {
+  margin-bottom: 15px;
+}
+
+.blood-pressure-section .field-row {
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+.head-notes-row {
+  display: flex;
+  gap: 20px; /* Space between fields */
+}
+
+.head-circumference-container {
+  flex: 1; /* Flex to take less space */
+}
+
+.nurse-notes-container {
+  flex: 2; /* Flex to take more space */
+}
+.form-container {
+  /* background-image: url('C:\Users\Nasreen\Desktop\Reactresponsivve\clientf\src\Pages\Popup\istockphoto-1388387871-1024x1024.jpg'); */
+   /* Replace with the path to your image */
+ 
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  
+ 
+}
+.form-container::before {
+  content: ''; /* Creates a pseudo-element */
+  position: absolute;
+ 
+  background: rgba(255, 255, 255, 0.4); /* White overlay with 50% opacity */
+  /* Ensures the overlay is on top of the background image */
+}

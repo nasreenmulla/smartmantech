@@ -1,0 +1,355 @@
+
+/* Background overlay to disable interaction with the content behind the modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it sits above other content */
+  pointer-events: auto; /* Allow interaction with the overlay itself */
+}
+
+/* Modal content container */
+.report-modal {
+
+}
+
+/* Close button styling */
+.report-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Ensure the body does not scroll while the modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+
+
+
+
+
+.modal-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    
+     /* Ensure it sits above other content */
+  }
+
+  .modal-popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 100%;
+    overflow: auto; /* Scroll if content overflows */
+    position: relative;
+  }
+  
+  .modal-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff5c5c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modal-popup-close:hover {
+    background: #ff0000;
+  }
+  
+  .modal-popup-header {
+    margin-bottom: 20px;
+  }
+  
+  .modal-popup-header h1 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  .bar {
+    display: flex;
+    justify-content: center; /* Center the barcode horizontally */
+}
+                /* Styles for Report Generator Page */
+.report-generator-page {
+font-family: Arial, sans-serif;
+/* padding: 20px; */
+}
+
+
+.report-generator-page button {
+/* padding: 10px 20px; */
+font-size: 16px;
+background-color: #007bff;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+.report-modal {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+/* background-color: #fff; */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+/* padding: 20px; */
+z-index: 1000;
+}
+
+.report-modal-content {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.report-modal .close {
+position: absolute;
+/* top: 10px;
+right: 10px; */
+cursor: pointer;
+font-size: 20px;
+color: #000;
+}
+
+.report-content {
+max-height: 400px; /* Set a maximum height */
+overflow-y: auto; /* Enable vertical scrollbar when content exceeds max height */
+/* margin-bottom: 20px; */
+}
+
+.report-options button {
+/* padding: 10px 20px; */
+font-size: 16px;
+background-color: #28a745;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+.report {
+/* background-color: #ffffff; */
+/* padding: 20px; */
+/* margin: 20px auto; */
+border: 1px solid #ccc;
+max-width: 800px; /* Adjust max-width as per your layout */
+overflow: hidden; /* Hide overflow to prevent double scrollbar */
+}
+
+
+.header {
+font-weight: bold;
+/* margin-bottom: 10px; */
+color: #000;
+}
+
+.creation-details
+.patient-profile,
+.patient-contacts,
+.patient-consent {
+/* margin-top: 15px; */
+}
+
+.label {
+font-weight: bold;
+/* margin-right: 5px; */
+color: #000;
+}
+.creation-details,
+.patient-profile,
+.patient-contacts,
+.patient-consent {
+/* padding: 10px; */
+border: 1px solid #000;
+background-color: #fff;
+}
+.creation-details h1
+.patient-profile h1,
+.patient-contacts h1,
+.patient-consent h1 {
+font-size: 18px;
+margin-bottom: 10px;
+border-bottom: 1px solid #000;
+/* padding-bottom: 5px; */
+color: #000;
+}
+
+.field {
+/* margin-bottom: 8px; */
+}
+
+.patient-consent {
+/* Preserve formatting of consent text */
+
+color: #000;
+}
+.consent-arabic {
+font-family: 'Arial', sans-serif; /* Use appropriate font-family for Arabic */
+text-align: right; /* Right-align Arabic text */
+direction: rtl; /* Set direction to right-to-left for Arabic */
+ /* Adjust spacing */
+}
+
+.consent-english {
+font-family: 'Arial', sans-serif; /* Use appropriate font-family for English */
+text-align: left; /* Left-align English text */
+direction: ltr; /* Set direction to left-to-right for English */
+/* margin-top: 3px; Adjust spacing */
+}
+.bar{
+display: flex;
+}
+.bar {
+display: flex;
+align-items: flex-start; /* Align items at the start of the flex container */
+gap: 20px; /* Gap between fields and barcode */
+}
+
+.creation-details {
+flex: 1; /* Take up remaining space */
+}
+
+.field {
+/* margin-bottom: 10px; Space between fields */
+}
+
+.barcode img {
+max-width: 100%; /* Ensure barcode image doesn't exceed its container */
+}
+.patient-profile {
+width: 100%;
+}
+
+.field-row {
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px; /* Adjust as needed */
+}
+
+.field {
+flex: 1; /* Each field takes equal width */
+/* margin-right: 20px;  */
+}
+
+.label {
+font-weight: bold;
+/* margin-right: 5px; */
+}
+.patient-contacts {
+width: 100%;
+}
+
+.field-row {
+display: flex;
+justify-content: space-between;
+/* margin-bottom: 10px; */
+}
+
+.field {
+flex: 1; /* Each field takes equal width */
+/* margin-right: 20px;  */
+}
+
+.label {
+font-weight: bold;
+/* margin-right: 5px; */
+}
+
+.company-details {
+width: 100%;
+}
+
+.field-row {
+display: flex;
+justify-content: space-between;
+/* margin-bottom: 10px;  */
+}
+
+.field {
+flex: 1; /* Each field takes equal width */
+/* margin-right: 20px;  */
+}
+
+.label {
+font-weight: bold;
+/* margin-right: 5px; */
+}
+.ph{
+text-align: center;
+}
+.phh{
+background-color: #f0f0f0; /* Light gray background */
+border: 1px solid #ccc; /* Light gray border */
+padding: 10px; /* Padding around the text */
+text-align: center; /* Center align text */
+}
+.company-details {
+display: flex;
+justify-content: space-between; /* Adjust the space between the two columns */
+/* margin-top: 20px;  */
+}
+
+.left-column,
+.right-column {
+flex: 1; /* Each column takes equal width */
+}
+
+.left-column {
+/* padding-right: 20px; */
+}
+
+.right-column {
+direction: rtl; /* Set direction to right-to-left for Arabic text */
+text-align: right; /* Align text to right for Arabic text */
+padding-left: 20px; 
+}
+
+.field {
+margin-bottom: 10px; /* Space between each field */
+/* Additional styling for each field */
+}
+
+.field.arabic {
+/* Additional styles specific to Arabic text */
+}
+.total-section {
+margin-top: 20px;
+border: 1px solid #ddd;
+padding: 10px;
+display: flex;
+flex-direction: column; /* Stack rows vertically */
+}
+
+.field-row {
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px; /* Space between rows */
+flex-wrap: wrap; /* Allows items to wrap to the next line */
+}
+
+.field-row > div {
+flex: 1 1 calc(25% - 10px); /* Adjust width for up to 4 items per row */
+box-sizing: border-box; /* Includes padding and border in the element's total width */
+}

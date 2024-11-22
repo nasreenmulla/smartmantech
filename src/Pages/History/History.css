@@ -1,0 +1,95 @@
+
+
+/* Date picker container styling */
+.ddate-picker-container {
+  margin-bottom: 20px;
+}
+
+/* Main content styling */
+.dmain-content {
+  padding: 20px;
+
+}
+
+/* Table container styling */
+.dhcontainer {
+  overflow-x: auto; /* For horizontal scrolling if needed */
+}
+
+/* //comented for error of appointment */
+/* .htable {
+  width: 100%;
+  border-collapse: collapse; 
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+
+
+th {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px 15px;
+  border: 1px solid #007bff; 
+  text-align: left;
+}
+
+
+td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd; 
+  text-align: left;
+}
+
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.serial-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.serial-button {
+  margin: 4px 0;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.serial-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+.loading-message, .error-message {
+  color: #ff4d4d;
+  font-size: 16px;
+  font-weight: bold;
+} */
+
+.search-results .htable {
+  border-collapse: collapse; /* Ensures borders are combined */
+  width: 100%; /* Optional: set table width */
+}
+
+.search-results .htable th,
+.search-results .htable td {
+  border: 1px solid #ccc; /* Light grey border */
+  padding: 10px; /* Add some padding for better spacing */
+  text-align: left; /* Align text to the left */
+}
+
+.search-results .htable th {
+  background-color: #f2f2f2; /* Optional: different background for header */
+}
+
